@@ -1,8 +1,8 @@
-useful commands:
-
+*******************************************
+useful git commands:
+*******************************************
 clone the whole directory:
 git clone https://github.com/LHHZ/RecH
-
 
 add a file:
 git add -f FILENAME
@@ -35,4 +35,16 @@ git pull origin master
 
 Tips:
 Always git pull before you edit a file, and git push when you're done.
+
+************************************************************************
+LATEX FILE
+************************************************************************
+to compile the latex file:
+pdflatex lhhz.tex
+bibtex lhhz
+pdflatex lhhz.tex
+
+on linux/MacOS platform you can just run the Makefile by typing "make" in the terminal
+
+
 
