@@ -8,7 +8,10 @@ add a file:
 git add -f FILENAME
 
 commit changes locally (history remembered on your local computer):
-git commit -m 'changes are ...'
+git commit -a -m 'changes are ...'
+
+commit local changes for a single file:
+git commit FILENAME -m 'changes are ...'
 
 push your local commit to the remote repository:
 git push origin master
