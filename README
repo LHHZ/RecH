@@ -28,7 +28,7 @@ git pull origin master
 [then manually merge FILENAME_local_copy with FILENAME]
 
 
-discard ALL local changes (save all changes into 'stash' and revert to the last git-pulled copy)
+discard ALL local changes (save all changes into 'stash' and revert to the last git-pulled copy):
 git stash save --keep-index
 git pull origin master
 [in this way you 'lose' all local changes (you can still get them back though)]
