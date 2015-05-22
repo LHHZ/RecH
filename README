@@ -1,0 +1,11 @@
+useful commands:
+
+clone the whole directory:
+git clone https://github.com/LHHZ/RecH
+
+
+add a file:
+git add -f FILENAME
+
+commit changes locally (history remembered on your local computer):
+git commit -m 'changes are ...'
