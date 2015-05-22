@@ -9,3 +9,27 @@ git add -f FILENAME
 
 commit changes locally (history remembered on your local computer):
 git commit -m 'changes are ...'
+
+push your local commit to the remote repository:
+git push origin master
+
+pull changes from the remote repository:
+git pull origin master
+
+In case of conflict, you can use:
+
+manually merge a conflict file:
+copy FILENAME FILENAME_local_copy
+git checkout FILENAME
+git pull origin master
+[then manually merge FILENAME_local_copy with FILENAME]
+
+
+discard ALL local changes (save all changes into 'stash' and revert to the last git-pulled copy)
+git stash save --keep-index
+git pull origin master
+[in this way you 'lose' all local changes (you still can get them back though)]
+
+Tips:
+Always git pull before you edit a file, and git push when you're done.
+
