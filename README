@@ -7,21 +7,21 @@ git clone https://github.com/LHHZ/RecH
 add a file:
 git add -f FILENAME
 
-commit changes locally (history remembered on your local computer):
+commit all local changes (file history is remembered on your local computer):
 git commit -a -m 'changes are ...'
 
 commit local changes for a single file:
 git commit FILENAME -m 'changes are ...'
 
-push your local commit to the remote repository:
-git push origin master
+push your local commit(s) to the remote repository:
+git push origin master [or simply 'git push' for single-branch repository]
 
 pull changes from the remote repository:
-git pull origin master
+git pull origin master [or simply 'git pull' for single-branch repository]
 
 In case of conflict, you can use:
 
-manually merge a conflict file:
+Manually merge a conflict file:
 copy FILENAME FILENAME_local_copy
 git checkout FILENAME
 git pull origin master
@@ -31,7 +31,7 @@ git pull origin master
 discard ALL local changes (save all changes into 'stash' and revert to the last git-pulled copy)
 git stash save --keep-index
 git pull origin master
-[in this way you 'lose' all local changes (you still can get them back though)]
+[in this way you 'lose' all local changes (you can still get them back though)]
 
 Tips:
 Always git pull before you edit a file, and git push when you're done.
